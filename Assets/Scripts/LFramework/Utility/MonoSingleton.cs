@@ -21,7 +21,10 @@ namespace LFramework
             if (m_Instance == null)
             {
                 m_Instance = this as T;
-                DontDestroyOnLoad(gameObject);
+                if (gameObject.transform.parent == null)
+                {
+                    DontDestroyOnLoad(gameObject);
+                }
             }
             else
             {

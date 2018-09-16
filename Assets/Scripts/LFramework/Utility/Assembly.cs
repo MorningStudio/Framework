@@ -46,7 +46,7 @@ namespace LFramework
         {
             if (string.IsNullOrEmpty(typeName))
             {
-                throw new LException("Type name is invalid.");
+                Log.Error("Type name is invalid.");
             }
 
             Type type = null;

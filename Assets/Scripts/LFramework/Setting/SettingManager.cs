@@ -16,8 +16,7 @@ namespace LFramework
             Type settingHelperType = Assembly.GetType(m_SettingHelperTypeName);
             if(settingHelperType == null)
             {
-                Debug.LogError("Type is null.");
-                new LException("Type is null.");
+                Log.Error("Type is null.");
             }
             m_SettingHelper = Activator.CreateInstance(settingHelperType) as ISettingHelper;
         }

@@ -22,7 +22,7 @@ public class Test : MonoBehaviour
         SettingManager.Instance.SetObject("obj",dataModel);
         SettingManager.Instance.Save();
         DataModel obj = SettingManager.Instance.GetObject<DataModel>("obj");
-        Debug.LogWarning(obj.name);
+        Log.Warning(obj.name);
 
     }
 	
