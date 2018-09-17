@@ -5,6 +5,7 @@ namespace LFramework
 {
     public class GameManager : MonoSingleton<GameManager>
     {
+        private const int DefaultDpi = 96;  // default windows dpi
         [SerializeField]
         private string m_LogHelperTypeName = "LFramework.DefaultLogHelper";
 
@@ -12,6 +13,12 @@ namespace LFramework
         {
             base.Awake();
             InitLogHelper();
+
+            Converter.ScreenDpi = Screen.dpi;
+            if (Converter.ScreenDpi <= 0)
+            {
+                Converter.ScreenDpi = DefaultDpi;
+            }
         }
 
         private void InitLogHelper()

@@ -22,12 +22,19 @@ public class Test : MonoBehaviour
         SettingManager.Instance.SetObject("obj",dataModel);
         SettingManager.Instance.Save();
         DataModel obj = SettingManager.Instance.GetObject<DataModel>("obj");
-        Log.Warning(obj.name);
+        Log.Info(obj.name);
 
+        EventManager.Instance.AddListener(TestEventArgs.EventId,OnTestHandle);
+        TestEventArgs args = new TestEventArgs();
+        args.message = "Hello";
+        EventManager.Instance.DispatchNow(this, args);
+        EventManager.Instance.RemoveListener(TestEventArgs.EventId, OnTestHandle);
+        EventManager.Instance.DispatchNow(this, args);
     }
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+	private void OnTestHandle(object sender,GameEventArgs e)
+    {
+        TestEventArgs args = e as TestEventArgs;
+        Log.Info(args.message);
+    }
 }
