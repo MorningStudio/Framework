@@ -33,6 +33,8 @@ namespace LFramework
         private bool m_ShowFullWindow = false;
         [SerializeField]
         private ConsoleWindow m_ConsoleWindow = new ConsoleWindow();
+        [SerializeField]
+        private GameMasterWindow m_GameMasterWindow = new GameMasterWindow();
 
         private SettingsWindow m_SettingsWindow = new SettingsWindow();
         private SystemInformationWindow m_SystemInformationWindow = new SystemInformationWindow();
@@ -161,6 +163,7 @@ namespace LFramework
         private void Start()
         {
             RegisterDebuggerWindow("Console", m_ConsoleWindow);
+            RegisterDebuggerWindow("GM", m_GameMasterWindow);
             RegisterDebuggerWindow("Information/System", m_SystemInformationWindow);
             RegisterDebuggerWindow("Information/Environment", m_EnvironmentInformationWindow);
             RegisterDebuggerWindow("Information/Screen", m_ScreenInformationWindow);

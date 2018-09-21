@@ -143,6 +143,38 @@ MonoBehaviour:
   m_Skin: {fileID: 0}
   m_ActiveWindowType: 0
   m_ShowFullWindow: 0
+  m_ConsoleWindow:
+    m_LockScroll: 1
+    m_MaxLine: 300
+    m_DateTimeFormat: '[HH:mm:ss.fff] '
+    m_InfoFilter: 1
+    m_WarningFilter: 1
+    m_ErrorFilter: 1
+    m_FatalFilter: 1
+    m_InfoColor:
+      serializedVersion: 2
+      rgba: 4294967295
+    m_WarningColor:
+      serializedVersion: 2
+      rgba: 4278512639
+    m_ErrorColor:
+      serializedVersion: 2
+      rgba: 4278190335
+    m_FatalColor:
+      serializedVersion: 2
+      rgba: 4281545650
+  m_GameMasterWindow:
+    m_CmdExecutorTypeName: CMDExecutor
+    m_CmdInfos:
+    - displayName: Test1
+      methodName: Test1
+      parameters:
+      - 1
+    - displayName: Test2
+      methodName: Test2
+      parameters:
+      - 1
+      - 2
 --- !u!4 &1758484
 Transform:
   m_ObjectHideFlags: 0

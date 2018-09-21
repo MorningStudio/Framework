@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using LFramework;
+using System.Reflection;
 
 public class DataModel
 {
@@ -30,11 +31,27 @@ public class Test : MonoBehaviour
         EventManager.Instance.DispatchNow(this, args);
         EventManager.Instance.RemoveListener(TestEventArgs.EventId, OnTestHandle);
         EventManager.Instance.DispatchNow(this, args);
+
+        MethodInfo methodInfo = typeof(Test).GetMethod("Test1");
+        try
+        {
+            methodInfo.Invoke(null, new object[] { 1, 2 });
+        }
+        catch (System.ArgumentException)
+        {
+            Debug.LogWarning("Args not match");
+        }
+
     }
 	
 	private void OnTestHandle(object sender,GameEventArgs e)
     {
         TestEventArgs args = e as TestEventArgs;
         Log.Info(args.message);
+    }
+
+    public static void Test1(int i1,int i2)
+    {
+        Debug.LogWarning(string.Format("Test1:{0},{1}",i1,i2));
     }
 }
