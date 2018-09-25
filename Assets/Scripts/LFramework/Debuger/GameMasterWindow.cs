@@ -54,12 +54,10 @@ namespace LFramework
 
         private Type m_CmdExecutorType;
         private List<CommandExcuteInfo> m_CMDExecuteInfos;
-        private Dictionary<string, MethodInfo> m_MethodInfos;
 
         public override void Initialize(params object[] args)
         {
             base.Initialize(args);
-            m_MethodInfos = new Dictionary<string, MethodInfo>();
 
             m_CmdExecutorType = Utility.Assembly.GetType(m_CmdExecutorTypeName);
             if(m_CmdExecutorType == null)
