@@ -14,16 +14,16 @@ namespace LFramework
             base.Awake();
             InitLogHelper();
 
-            Converter.ScreenDpi = Screen.dpi;
-            if (Converter.ScreenDpi <= 0)
+            Utility.Converter.ScreenDpi = Screen.dpi;
+            if (Utility.Converter.ScreenDpi <= 0)
             {
-                Converter.ScreenDpi = DefaultDpi;
+                Utility.Converter.ScreenDpi = DefaultDpi;
             }
         }
 
         private void InitLogHelper()
         {
-            Type type = Assembly.GetType(m_LogHelperTypeName);
+            Type type = Utility.Assembly.GetType(m_LogHelperTypeName);
             Log.SetLogHelper(Activator.CreateInstance(type) as ILogHelper);
         }
     }

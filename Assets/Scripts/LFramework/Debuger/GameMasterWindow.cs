@@ -61,7 +61,7 @@ namespace LFramework
             base.Initialize(args);
             m_MethodInfos = new Dictionary<string, MethodInfo>();
 
-            m_CmdExecutorType = Assembly.GetType(m_CmdExecutorTypeName);
+            m_CmdExecutorType = Utility.Assembly.GetType(m_CmdExecutorTypeName);
             if(m_CmdExecutorType == null)
             {
                 Log.Error("CmdExecutorType is null");

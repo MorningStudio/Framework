@@ -13,7 +13,7 @@ namespace LFramework
         protected override void Awake()
         {
             base.Awake();
-            Type settingHelperType = Assembly.GetType(m_SettingHelperTypeName);
+            Type settingHelperType = Utility.Assembly.GetType(m_SettingHelperTypeName);
             if(settingHelperType == null)
             {
                 Log.Error("Type is null.");

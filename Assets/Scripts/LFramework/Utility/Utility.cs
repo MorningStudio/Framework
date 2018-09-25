@@ -1,6 +1,6 @@
 ﻿namespace LFramework
 {
-    public static class Utility
+    public static partial class Utility
     {
 
     }
