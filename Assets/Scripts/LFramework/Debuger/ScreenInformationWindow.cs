@@ -14,8 +14,8 @@ namespace MorningStudio
             GUILayout.BeginVertical("box");
             {
                 DrawItem("Current Resolution", GetResolutionString(Screen.currentResolution));
-                DrawItem("Screen Width", string.Format("{0} px / {1} in / {2} cm", Screen.width.ToString(), Converter.GetInchesFromPixels(Screen.width).ToString("F2"), Converter.GetCentimetersFromPixels(Screen.width).ToString("F2")));
-                DrawItem("Screen Height", string.Format("{0} px / {1} in / {2} cm", Screen.height.ToString(), Converter.GetInchesFromPixels(Screen.height).ToString("F2"), Converter.GetCentimetersFromPixels(Screen.height).ToString("F2")));
+                DrawItem("Screen Width", string.Format("{0} px / {1} in / {2} cm", Screen.width.ToString(), Utility.Converter.GetInchesFromPixels(Screen.width).ToString("F2"), Utility.Converter.GetCentimetersFromPixels(Screen.width).ToString("F2")));
+                DrawItem("Screen Height", string.Format("{0} px / {1} in / {2} cm", Screen.height.ToString(), Utility.Converter.GetInchesFromPixels(Screen.height).ToString("F2"), Utility.Converter.GetCentimetersFromPixels(Screen.height).ToString("F2")));
                 DrawItem("Screen DPI", Screen.dpi.ToString("F2"));
                 DrawItem("Screen Orientation", Screen.orientation.ToString());
                 DrawItem("Is Full Screen", Screen.fullScreen.ToString());

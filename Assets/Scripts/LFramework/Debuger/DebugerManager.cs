@@ -197,6 +197,12 @@ namespace MorningStudio
             m_FpsCounter.Update(Time.deltaTime, Time.unscaledDeltaTime);
         }
 
+        private void OnDestroy()
+        {
+            m_ActiveWindow = false;
+            m_DebuggerWindowRoot.Shutdown();
+        }
+
         /// <summary>
         /// 注册调试窗口。
         /// </summary>

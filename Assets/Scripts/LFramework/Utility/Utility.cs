@@ -1,6 +1,6 @@
 ﻿namespace MorningStudio
 {
-    public static class Utility
+    public static partial class Utility
     {
 
     }
