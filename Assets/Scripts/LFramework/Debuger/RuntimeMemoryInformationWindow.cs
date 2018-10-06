@@ -5,7 +5,7 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.Profiling;
 
-namespace LFramework
+namespace MorningStudio
 {
     internal sealed partial class RuntimeMemoryInformationWindow<T> : ScrollableDebuggerWindowBase where T : UnityEngine.Object
     {

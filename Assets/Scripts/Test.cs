@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using LFramework;
+using MorningStudio;
 using System.Reflection;
 
 public class DataModel

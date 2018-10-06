@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace LFramework
+namespace MorningStudio
 {
     /// <summary>
     /// 调试窗口组。

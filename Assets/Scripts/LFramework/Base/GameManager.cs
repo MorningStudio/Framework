@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace LFramework
+namespace MorningStudio
 {
     public class GameManager : MonoSingleton<GameManager>
     {

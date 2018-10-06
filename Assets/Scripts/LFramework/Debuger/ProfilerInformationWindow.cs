@@ -5,7 +5,7 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.Profiling;
 
-namespace LFramework
+namespace MorningStudio
 {
     internal sealed class ProfilerInformationWindow : ScrollableDebuggerWindowBase
     {

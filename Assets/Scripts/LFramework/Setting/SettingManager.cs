@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace LFramework
+namespace MorningStudio
 {
     public class SettingManager : MonoSingleton<SettingManager>
     {

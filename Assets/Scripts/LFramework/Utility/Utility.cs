@@ -1,4 +1,4 @@
-﻿namespace LFramework
+﻿namespace MorningStudio
 {
     public static class Utility
     {

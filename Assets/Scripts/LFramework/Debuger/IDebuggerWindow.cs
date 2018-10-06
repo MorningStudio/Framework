@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace LFramework
+namespace MorningStudio
 {
     /// <summary>
     /// 调试窗口接口。

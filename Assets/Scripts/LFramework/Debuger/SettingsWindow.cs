@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 
-namespace LFramework
+namespace MorningStudio
 {
     internal sealed class SettingsWindow : ScrollableDebuggerWindowBase
     {

@@ -5,7 +5,7 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-namespace LFramework
+namespace MorningStudio
 {
     internal sealed class EnvironmentInformationWindow : ScrollableDebuggerWindowBase
     {

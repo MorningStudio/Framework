@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace LFramework
+namespace MorningStudio
 {
     /// <summary>
     /// 类型转换相关的实用函数。

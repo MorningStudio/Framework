@@ -1,4 +1,4 @@
-﻿namespace LFramework
+﻿namespace MorningStudio
 {
     public class Singleton<T> where T : Singleton<T>, new()
     {

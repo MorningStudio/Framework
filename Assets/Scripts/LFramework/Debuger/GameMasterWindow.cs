@@ -5,7 +5,7 @@ using System.Reflection;
 using System.Text;
 using UnityEngine;
 
-namespace LFramework
+namespace MorningStudio
 {
     [AttributeUsage(AttributeTargets.Method)]
     public class CommandInfo : Attribute

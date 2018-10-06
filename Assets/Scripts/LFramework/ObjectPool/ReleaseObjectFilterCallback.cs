@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace LFramework
+namespace MorningStudio
 {
     /// <summary>
     /// 释放对象筛选函数。

@@ -1,7 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-namespace LFramework
+namespace MorningStudio
 {
     public class CustomAssetPostprocessor : AssetPostprocessor
     {

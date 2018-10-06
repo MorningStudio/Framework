@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace LFramework
+namespace MorningStudio
 {
     public static class EditorTools
     {

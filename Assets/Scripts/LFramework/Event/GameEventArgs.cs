@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LFramework
+namespace MorningStudio
 {
     public abstract class GameEventArgs : EventArgs
     {

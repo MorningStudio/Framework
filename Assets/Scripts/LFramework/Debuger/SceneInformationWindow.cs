@@ -5,7 +5,7 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace LFramework
+namespace MorningStudio
 {
     internal sealed class SceneInformationWindow : ScrollableDebuggerWindowBase
     {
