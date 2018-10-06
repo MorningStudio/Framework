@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace LFramework
+namespace MorningStudio
 {
     /// <summary>
     /// 对象池。

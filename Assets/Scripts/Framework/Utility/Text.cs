@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace LFramework
+namespace MorningStudio
 {
     public static partial class Utility
     {

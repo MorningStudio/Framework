@@ -165,16 +165,6 @@ MonoBehaviour:
       rgba: 4281545650
   m_GameMasterWindow:
     m_CmdExecutorTypeName: CMDExecutor
-    m_CmdInfos:
-    - displayName: Test1
-      methodName: Test1
-      parameters:
-      - 1
-    - displayName: Test2
-      methodName: Test2
-      parameters:
-      - 1
-      - 2
 --- !u!4 &1758484
 Transform:
   m_ObjectHideFlags: 0
@@ -344,7 +334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c2283707dd4b5845a2ac7f3f85eb24a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LogHelperTypeName: LFramework.DefaultLogHelper
+  m_LogHelperTypeName: MorningStudio.DefaultLogHelper
 --- !u!4 &555904908
 Transform:
   m_ObjectHideFlags: 0
@@ -388,7 +378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7076226bcc75344e93f4dbd099287b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SettingHelperTypeName: LFramework.PlayerPrefsSettingHelper
+  m_SettingHelperTypeName: MorningStudio.PlayerPrefsSettingHelper
 --- !u!4 &1129311306
 Transform:
   m_ObjectHideFlags: 0
