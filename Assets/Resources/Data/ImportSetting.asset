@@ -17,11 +17,11 @@ MonoBehaviour:
   sheetName: Test.xls
   workSheetName: Unit
   columnHeaderList:
-  - type: 0
+  - type: 3
     name: id
     isEnable: 0
     isArray: 0
-  - type: 0
+  - type: 1
     name: name
     isEnable: 0
     isArray: 0
